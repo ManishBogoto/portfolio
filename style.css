@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    z-index: 10;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: coral;
+    /* Accent color */
+}
+
+/* Section Styling */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    font-weight: 500;
+    background-color: coral;
+    padding: 15px;
+    color: #fff;
+    border-radius: 30px;
+
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 0 22%;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.project {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.project p {
+    font-size: 1em;
+    margin: 0 20px 20px;
+    text-align: center;
+    color: #666;
+}
+
+.btn {
+    margin-left: 14.5%;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: coral;
+    border: none;
+    color: #fff;
+}
+
+button a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: rgb(236, 67, 5);
+}
+
+button a:hover{
+    text-decoration: underline;
+    color: #fff;
+    font-weight: bold;
+}
+
+.projects h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin: 20px;
+    text-align: center;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+
+}
+
+/* Contact Section */
+.contact {
+    background-color: coral;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+
+#left-half {
+    width: 40%;
+    padding-right: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    border-right: 1px dashed rgba(237, 237, 237, 0.646);
+    box-sizing: border-box;
+}
+
+#right-half {
+    width: 50%;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+#right-half h3 {
+    color: #fff;
+}
+
+#right-half ul {
+    list-style: none;
+    padding: 0 20px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    font-size: 22px;
+}
+#right-half li a {
+    font-size: 15.5px;
+    color:navy;
+}
+
+.contact h2 {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.contact p {
+    font-size: 1.2em;
+    text-align: left;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: coral;
+    color: white;
+    font-size: 0.9em;
+}
+
