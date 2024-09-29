@@ -308,14 +308,12 @@ footer {
     #left-half {
         width: 100%;
         padding: 10px;
-        border: 1px solid black;
         margin: 0;
         text-align: center;
     }
 
     #right-half {
         width: 100%;
-        border: 1px solid black;
         padding: 20px 10px 10px 10px;
     }
 
