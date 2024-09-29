@@ -6,21 +6,46 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     color: #333;
 }
 
-h1 {
-    font-size: 1.5em;
-    text-align: center;
-    font-weight: 500;
-    background-color: coral;
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 15px;
-    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    z-index: 10;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: coral;
+    /* Accent color */
+}
+
+section {
+    margin: 40px 80px;
+}
+
+h2 {
+    font-size: 2em;
+    background-color: #f8f9fa;
+    text-align: center;
 }
 
 table {
-    margin: 40px 80px;
+    margin: 20px;
 }
 
 
@@ -33,14 +58,14 @@ td{
 
 .design img {
     height: auto;
+    background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
-    border: 1.2px dotted coral;
-    border-radius: 8px;
     padding: 10px;
 }
 
 .design img:hover {
     scale: 1.2;
+    background-color: #f8f9fa;
     border: none;
     border-radius: 0;
 }
@@ -52,4 +77,62 @@ footer {
     background-color: coral;
     color: white;
     font-size: 0.9em;
+}
+
+@media (max-width: 800px) {
+    table{
+        margin: 30px;
+        padding: 5px;
+    }
+    td{
+        height: auto;
+        width: 50%;
+        column-width: 2;
+    }
+    .design{
+        padding-left: 10px;
+    }
+    
+    .design img {
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+
+@media (max-width: 620px) {
+    nav {
+        font-size: small;
+    }
+    
+    nav a {
+        margin: 0 8px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    table{
+        margin: 30px;
+        padding: 5px;
+    }
+    td{
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+    .design{
+        padding-left: 0px;
+    }
+    
+    .design img {
+        height: auto;
+        padding: 5px;
+        width: 100%;
+    }
+
 }
