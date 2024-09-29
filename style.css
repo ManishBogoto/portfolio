@@ -33,7 +33,7 @@ nav a:hover {
 
 /* Section Styling */
 section {
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,9 +208,13 @@ footer {
     font-size: 0.9em;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     section {
-        min-height: 55vh;
+        min-height: 75vh;
+    }
+    
+    .hero {
+        padding: 20px 0;
     }
 
     .hero h1 {
@@ -273,17 +277,27 @@ footer {
     nav {
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     nav a {
-        margin: 0 12px;
-        font-size: small;
+        margin: 8px;
+        font-size: 14px;
+    }
+    
+    .hero {
+        padding: 20px 0;
     }
 
     .hero h1 {
         font-size: 2em;
         padding: 10px;
+    }
+
+    .hero p {
+        font-size: 1em;
+        color: #666;
+        margin: 0 22%;
     }
 
     .contact {
@@ -294,12 +308,14 @@ footer {
     #left-half {
         width: 100%;
         padding: 10px;
-        margin: 20px 0;
+        border: 1px solid black;
+        margin: 0;
         text-align: center;
     }
 
     #right-half {
         width: 100%;
+        border: 1px solid black;
         padding: 20px 10px 10px 10px;
     }
 
@@ -340,6 +356,116 @@ footer {
     footer {
         text-align: center;
         padding: 10px;
+        margin-top: -30px;
         font-size: 0.9em;
     }
 }
+
+@media (max-width: 480px) {
+    nav {
+        padding: 8px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 12px;
+        justify-content: space-evenly;
+    }
+
+    .hero {
+        padding: 20px 0;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 12px;
+    }
+
+    .hero p {
+        font-size: 1em;
+        color: #666;
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    nav {
+        padding: 8px;
+        width: fit-content;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 12px;
+        justify-content: space-evenly;
+    }
+
+    .hero {
+        padding: 16px 0;
+    }
+
+    .hero h1 {
+        font-size: 0.9em;
+        font-weight: bold;
+        padding: 7px;
+    }
+
+    .hero p {
+        font-size: 0.7em;
+        color: #666;
+        margin: 0 30px;
+    }
+
+    .projects {
+        padding: 20px 0;
+    }
+    
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 40px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .project {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .project p {
+        font-size: 0.7em;
+        margin: 0 20px 20px;
+    }
+    
+    .btn {
+        display: inline-block;
+    }
+    
+    button {
+        padding: 10px;
+        width: 100%;
+        margin: 5px;
+        border-radius: 20px;
+        background-color: coral;
+        border: none;
+        color: #fff;
+    }
+    
+    button a {
+        font-weight: normal;
+        font-size: 12px;
+    }
+    
+    .project h3 {
+        font-size: 1.2em;
+        margin: 10px;
+    }
+    
+}
+
