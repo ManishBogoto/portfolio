@@ -33,7 +33,7 @@ nav a:hover {
 
 /* Section Styling */
 section {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,11 +53,6 @@ section {
     padding: 15px;
     color: #fff;
     border-radius: 30px;
-
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 .hero p {
@@ -110,18 +105,18 @@ button {
     color: #fff;
 }
 
-button a{
+button a {
     text-decoration: none;
     color: #fff;
     font-weight: 600;
     font-size: 15px;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(236, 67, 5);
 }
 
-button a:hover{
+button a:hover {
     text-decoration: underline;
     color: #fff;
     font-weight: bold;
@@ -187,9 +182,10 @@ button a:hover{
     text-align: left;
     font-size: 22px;
 }
+
 #right-half li a {
     font-size: 15.5px;
-    color:navy;
+    color: navy;
 }
 
 .contact h2 {
@@ -212,3 +208,138 @@ footer {
     font-size: 0.9em;
 }
 
+@media (max-width: 800px) {
+    section {
+        min-height: 55vh;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+        padding: 10px;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    #left-half {
+        width: 40%;
+        padding-right: 10px;
+    }
+
+    #right-half {
+        width: 50%;
+        padding-left: 15px;
+        margin-bottom: 30px;
+    }
+
+    #right-half ul {
+        list-style: none;
+        padding: 0px;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    #right-half li {
+        margin-top: 5px;
+    }
+
+    #right-half li a {
+        font-size: 14px;
+    }
+
+    .contact h2 {
+        font-size: 1em;
+        color: #fff;
+    }
+
+    .contact p {
+        font-size: 1em;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    button {
+        width: 40%;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 580px) {
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 0 12px;
+        font-size: small;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+        padding: 10px;
+    }
+
+    .contact {
+        width: 100%;
+        display: block;
+    }
+
+    #left-half {
+        width: 100%;
+        padding: 10px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    #right-half {
+        width: 100%;
+        padding: 20px 10px 10px 10px;
+    }
+
+    #right-half ul {
+        padding: 0px;
+        margin: 0 15px;
+        font-size: 14px;
+    }
+
+    #right-half h3 {
+        margin-top: 0px;
+        text-decoration: underline;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #right-half li {
+        margin-top: 5px;
+    }
+
+    #right-half li a {
+        font-size: 13px;
+    }
+
+    .contact h2 {
+        font-size: 1em;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .contact p {
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
